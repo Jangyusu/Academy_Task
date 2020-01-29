@@ -24,8 +24,10 @@
 }
 
 #header .right {
+    width: 649px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #header .nav {
@@ -45,7 +47,6 @@
     width: 1px;
     height: 32px;
     background: #bfbfbf;
-    margin: 0 40px;
 }
 
 #header .menu {
