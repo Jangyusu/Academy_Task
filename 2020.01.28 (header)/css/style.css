@@ -32,10 +32,10 @@
     color: #333;
     font-weight: bold;
     padding: 24px 10px;
+    transition: .5s;
 }
 #header .nav li a:hover {
     color: #fff;
-    transition: .2s;
 }
 #header .nav li a::before {
     content: "";
@@ -45,10 +45,10 @@
     left: 0; top: -100%;
     background: #65767d;
     z-index: -1;
+    transition: .5s;
 }
 #header .nav li a:hover::before {
     top: 0;
-    transition: .2s;
 }
 #header .line {
     content: "";

@@ -1,0 +1,35 @@
+@import 'common.css';
+
+/* 전체 */
+#wrap {width: 1140px; margin: 0 auto;}
+
+/* 헤더 */
+#header h1 {font-size: 26px; color: #242732; text-align: center; margin-top: 20px;}
+#header:after {content: ""; width: 70px; border: 1px solid #242732; display: block; margin: 0 auto; margin-top: 30px; margin-bottom: 98px;}
+
+/* 컨텐츠 */
+#content {display: flex; justify-content: space-around;}
+#content li {width: 360px;}
+#content li>div {width: 360px; height: 200px; position: relative; font-size: 0}
+#content li>div span {width: 100%; height: 100%; position: absolute; left: 0; top: 0; border-radius: 10px; background: rgba(0,0,0,.6); opacity: 0; transition: .3s; text-align: center;}
+#content li>div span:hover {opacity: 1; transition: .3s;}
+#content .scale {width: 360px; height: 200px; overflow: hidden; border-radius: 10px;}
+#content .scale img {transform: scale(1.0); transition: .5s;}
+/* 오렌지 박스 */
+#content .orange_box {width: 65px; height: 65px; background: #e45914; border-radius: 10px; position: absolute; left: 0; top: 0;}
+#content .orange_box p {text-align: center;}
+#content .orange_box p:first-of-type {color: #fff; font-size: 20px; margin-top: 8px;}
+#content .orange_box p:last-of-type {color: #e5c9bb; font-size: 15px;}
+/* 아이콘 */
+#content .icon {display: flex; justify-content: center; align-items: center;}
+#content .icon a {width: 32px; height: 32px; background: rgb(150,150,150,.5) url('../img/icon.png') no-repeat ; border-radius: 10px;}
+#content .icon a:first-child {background-position: 6px center; margin-right: 5px;}
+#content .icon a:last-child {background-position: -26px center;}
+/* 본문 */
+#content strong {font-size: 15px; color: #242732; margin: 30px 0; text-transform: uppercase;}
+#content em {font-size: 12px; font-weight: bold; margin-top: 23px;}
+
+/* 푸터 */
+#footer {text-align: center; margin-top: 119px;}
+#footer p {font-size: 12px; color: #242732; border: 2px solid #242732; display: inline; padding: 18px 45px; border-radius: 100px; letter-spacing: .3em; transition: .5s;}
+#footer p:hover {color: #fff; background: #e45914; border: 0; transition: .5s;}
