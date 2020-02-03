@@ -1,0 +1,35 @@
+html,body{
+    margin:0px;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration-line: none;
+}
+span,em,strong,a{
+    display: inline-block;
+}
+img {
+    font-size: 0;
+}
+*{
+    margin:0;padding:0;
+    font-size:16px;
+    box-sizing:border-box;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    
+    /*
+        border 또는 padding 넣어주면 
+        width,height값이 변경됨
+    
+        box-sizing:border-box는 이러한 문제점을
+        해결해줌 (width,height 값이 변경 안됨)
+    */
+    
+}
+
+
+
+
