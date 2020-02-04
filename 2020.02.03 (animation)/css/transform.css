@@ -51,7 +51,7 @@ h1 {
 .scale2 figure img {
     border-radius: 0;
     width: 500px;
-    transition: 3s;
+    transition: 3s 1s;
 }
 .scale2 figure:hover img {
     border-radius: 100%;
@@ -71,7 +71,7 @@ h1 {
     font-weight: bolder;
     text-transform: uppercase;
     opacity: 0;
-    transition: 3s;
+    transition: 5s;
 }
 .scale2 figure:hover::after {
     width: 500px;
