@@ -1,0 +1,223 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+/* import */
+
+
+
+/* font
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Myriad Pro', sans-serif;
+
+*/
+
+
+
+/* html, body */
+
+html, body {
+    font-family: 'Myriad Pro';
+    color: #333;
+    font-weight: normal;
+}
+
+
+
+/* header */
+
+header {
+    width: 1290px; height: 164px;
+    margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+    position: absolute; left: 50%; top: 0;
+    transform: translateX(-50%);
+    animation: slide 1s;
+}
+@keyframes slide {
+    0%{
+        margin-top: -100px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+header a h1 {
+    font-family: 'Rage';
+    font-size: 35.66px;
+    line-height: 56.23px;
+    color: #fed136;
+    font-weight: normal;
+}
+header nav {}
+header nav a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19.2px;
+    line-height: 56.23px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 67px;
+    text-transform: uppercase;
+}
+header nav a:last-of-type {
+    margin-right: none;
+}
+
+
+
+/* visual */
+
+.visual {
+    background: url(../img/visual.jpg) no-repeat center / cover;
+    color: #fff;
+    text-align: center;
+    padding: 382px 0 221px;
+}
+.visual h2 {
+    font-size: 54.86px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.visual p {
+    font-size: 102.86px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.visual a {
+    width: 330px; height: 90px;
+    background: #fed136;
+    border-radius: 5px;
+    font-size: 24.69px;
+    line-height: 90px;
+    font-weight: bold;
+    transition: background 1s, transform 1s;
+    text-transform: uppercase;
+}
+.visual a:hover {
+    background: #000;
+    transform: translateX(20px) translateY(20px);
+}
+
+
+
+/* section */
+
+section {
+    text-align: center;
+    padding: 166px 0 0 0;
+    background: #f7f7f7;
+}
+section h3 {
+    font-size: 54.86px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222222;
+}
+section > p {
+    font-size: 21.94px;
+    color: #777;
+    margin-bottom: 110px;
+}
+section ul {
+    width: 1290px; margin: 0 auto;
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    margin-bottom: 92px;
+}
+section ul li {
+    margin-bottom: 70px;
+}
+section ul li figure {
+    margin: 0;
+}
+section ul li figure p {
+    overflow: hidden;
+}
+section ul li figure p img {
+    transition: .5s;
+}
+section ul li figure p:hover img {
+    transform: scale(1.1) rotateY(360deg);
+}
+section ul li figure figcaption {
+    font-size: 24.69px;
+    font-weight: bold;
+    background: #fff;
+    padding: 42px 0;
+}
+section ul li figure figcaption span {
+    font-size: 19.2px;
+    font-weight: normal;
+    color: #737373;
+}
+
+section .logo {
+    background: #fff;
+    padding: 70px 0;
+}
+section .logo a {
+    margin-right: 45px;
+}
+section .logo a:last-of-type {
+    margin-right: none;
+}
+section .logo a img {}
+
+section article {
+    background: #222;
+    padding: 152px 0 180px;
+}
+section article h3 {
+    font-size: 54.86px;
+    color: #fff;
+}
+section article p {
+    font-size: 21.94px;
+    color: #777;
+    margin-bottom: 78px;
+}
+section article form {}
+section article form input[type="email"]{
+    width: 626px; height: 73px;
+    font-size: 24.69px;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 0 25px;
+    outline-style: none;
+    text-transform: uppercase;
+}
+section article form input[type="email"]::placeholder {
+    font-size: 24.69px;
+    font-weight: bold;
+    color: #bbb;
+    text-transform: uppercase;
+}
+section article form button {
+    font-size: 24.69px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 73px;
+    background: #fed136;
+    color: #fff;
+    padding: 0 80px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* footer */
+
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 75px 0 130px;
+}
+footer p {
+    font-size: 21.94px;
+    color: #8f8f8f;
+    font-weight: lighter;
+}
