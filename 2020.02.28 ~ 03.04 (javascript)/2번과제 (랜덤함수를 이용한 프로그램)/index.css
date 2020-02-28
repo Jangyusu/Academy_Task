@@ -1,0 +1,36 @@
+@import url(common.css);
+
+body {
+    text-align: center;
+    padding: 60px 0;
+}
+div {
+    width: 300px;
+    height: 400px;
+    margin: 30px auto;
+    border: 5px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform .5s ease-in-out;
+}
+div.turn{
+    transform: rotateY(7200deg);
+}
+p {
+    padding: 20px 10px;
+    font-size: 50px;
+}
+p.red{
+    color: #f00;
+}
+
+div P:first-of-type {
+    text-align: left;
+}
+div P:nth-of-type(2){
+    font-size: 100px;
+}
+div P:last-of-type {
+    text-align: right;
+}
