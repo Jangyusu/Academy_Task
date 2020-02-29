@@ -12,10 +12,10 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform .5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 div.turn{
-    transform: rotateY(7200deg);
+    transform: rotateY(180deg);
 }
 p {
     padding: 20px 10px;

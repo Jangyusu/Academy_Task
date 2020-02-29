@@ -20,10 +20,12 @@ draw.addEventListener("click", function() {
 
         number.innerHTML = numberList[numberRandom];
 
-        for (var i = 0; i < all.length; i++) {
-            if (patternList[patternRandom] == "♥" && "◆") {
+        if (patternList[patternRandom] == "♥" || patternList[patternRandom] == "◆") {
+            for (var i = 0; i < all.length; i++) {
                 all[i].classList.add("red");
-            } else if (patternList[patternRandom] == "♠" && "♣") {
+            }
+        } else if (patternList[patternRandom] == "♠" || patternList[patternRandom] == "♣") {
+            for (var i = 0; i < all.length; i++) {
                 all[i].classList.remove("red");
             }
         }
@@ -31,5 +33,5 @@ draw.addEventListener("click", function() {
         for (var i = 0; i < pattern.length; i++) {
             pattern[i].innerHTML = patternList[patternRandom];
         }
-    }, 500);
+    }, 1000);
 });
