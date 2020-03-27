@@ -1,8 +1,7 @@
 $(function () {
     //start
 
-    var delta = 0,
-        scrollTop = 0,
+    var scrollTop = 0,
         windowHeight = $(window).innerHeight();
 
 
@@ -20,8 +19,8 @@ $(function () {
             </figure>`
         );
     }; //content 넣기
-
     $(".content_box").each(img); //content img 넣기
+
     $(".visual p").addClass("active"); //시작할 때 텍스트 애니메이션
 
     $(".burger_menu").on("click", menuOpen); //메뉴 열기
@@ -62,11 +61,9 @@ $(function () {
     }
 
     function headerControl() { //스크롤시 헤더 on/off
-        delta = this.event.wheelDelta;
-
-        if (delta < 0) { //스크롤 내릴 때
+        if (windowHeight < scrollTop) { //스크롤 내릴 때
             $("header").addClass("active");
-        } else { //스크롤 올릴 때
+        } else {
             $("header").removeClass("active");
         }
     }
