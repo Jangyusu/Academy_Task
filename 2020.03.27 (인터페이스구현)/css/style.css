@@ -1,0 +1,246 @@
+@import url(common.css);
+
+header {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 20%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    transition: .5s;
+}
+header.active {
+    transform: translateY(-100%);
+}
+.logo {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+.burger_menu {
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .2s;
+}
+.burger_menu:hover {
+    height: 22px;
+}
+.burger_menu span {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+}
+.menus {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.menus.active {
+    visibility: visible;
+    opacity: 1;
+}
+.menus a {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 120px;
+}
+.menus.active a {
+    animation: bounce .5s forwards ease-in-out;
+}
+@keyframes bounce {
+    50% {
+        transform: scale(.9);
+    }
+    70% {
+        transform: scale(1.1);        
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.main {
+    width: 100%;
+}
+.visual {
+    width: 100%;
+    height: 670px;
+    margin: 0 auto;
+    background: url(../img/visual.jpg) no-repeat center top / cover;
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+}
+.visual.active {
+    transform: translateY(20%) scale(.8);
+}
+.visual p {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 1s;
+}
+.visual p:first-of-type {
+    font-size: 16.08px;
+    font-weight: 300;
+    letter-spacing: 20px;
+}
+.visual p:last-of-type {
+    font-size: 56.38px;
+    font-weight: 400;
+}
+.visual p.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.contents {
+    width: 100%;
+    padding: 190px 0;
+    text-align: center;
+}
+.contents h2 {
+    font-size: 40px;
+    color: #000;
+}
+.blue_line {
+    width: 80px;
+    height: 2px;
+    background: #0f28fb;
+    margin-top: 20px;
+}
+.content {
+    width: 99%;
+    margin: 0 auto;
+    padding: 130px 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content_box {
+    width: 49%;
+    height: 500px;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(40%);
+    opacity: 0;
+    transition: 1s;
+}
+.content_box:nth-of-type(even) {
+    transition: 1s .2s;
+}
+.content_text {
+    width: 100%;
+    height: 100%;
+    padding: 110px 0;
+    background: rgba(255, 255, 255, .9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.content_text.active {
+    opacity: 1;
+    visibility: visible;
+}
+.content_text i {
+    font-size: 20px;
+    padding: 25px;
+    background: #000;
+    border-radius: 100%;
+}
+.content_text p:first-of-type {
+    font-size: 12px;
+    color: #666;
+}
+.content_text p:last-of-type {
+    font-size: 40px;
+    color: #000;
+}
+.contents_button {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transform: translateY(40%);
+    opacity: 0;
+    transition: 1s;
+}
+.contents_button button {
+    line-height: 30px;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 10px;
+    opacity: .7;
+    transition: .5s;
+}
+.contents_button button:hover {
+    color: #0f28fb;
+    border: 1px solid #0e27fb;
+    padding: 0 15px;
+    opacity: 1;
+}
+.end {
+    width: 100%;
+    padding: 130px 15% 160px;
+    background: #eee;
+    overflow: hidden;
+    transform: translateY(40%);
+    opacity: 0;
+    transition: 1s;
+}
+.slide.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.end p {
+    width: 600px;
+    font-size: 50.61px;
+    line-height: 90px;
+    color: #000;
+}
+.end a {
+    width: 240px;
+    height: 60px;
+    background: #0f28fb;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 320px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    letter-spacing: 2px;
+}
