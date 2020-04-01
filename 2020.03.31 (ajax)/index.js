@@ -11,12 +11,18 @@ $(function () {
                 pop = '',
                 text = '',
                 idx = 0;
-            $(data).find('article').each(function () {
-                photo = '<article class="thumb">' + $(this).html() + '</article>';
+
+            $(data).find('item').each(function () {
+                photo = `<article class="thumb">
+                            <a href="${$(this).find("full").html()}" class="image"><img src="${$(this).find("thum").html()}" alt=""></a>
+                            <h2>${$(this).find("title").html()}</h2>
+                        </article>`;
                 $('#main').append(photo);
             });
+
             $('#main').on('click', 'article', function (e) {
                 e.preventDefault();
+
                 $('.poptrox-overlay').show();
                 idx = $(this).index();
                 dataInfo();
